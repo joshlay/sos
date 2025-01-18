@@ -7,9 +7,12 @@ and configures optional `extras.d` entries
 Role Variables
 --------------
 
-1. `sos_extras`
-
-Custom commands or files in `sos` reports.
+1. `sos_extras`: custom commands or files in `sos` reports.
+Default: see [Example Playbook](#example-playbook)
+2. `sos_xsos`: controls [xsos](https://github.com/ryran/xsos) installation.
+Default: `true`
+3. `sos_xsos_url`: `xsos` installation URL.
+[Default](https://github.com/ryran/xsos/raw/master/xsos)
 
 Example Playbook
 ----------------

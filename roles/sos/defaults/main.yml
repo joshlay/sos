@@ -6,3 +6,7 @@ sos_pkgs:  # mapped by 'ansible_os_family'; includes derivatives
     - sosreport
   RedHat:
     - sos
+
+# sosreport examiner
+sos_xsos: true
+sos_xsos_url: 'https://github.com/ryran/xsos/raw/master/xsos'
