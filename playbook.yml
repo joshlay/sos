@@ -1,6 +1,8 @@
 ---
 - name: "'sos' role"
   hosts: all
+  gather_facts: true  # explicitly gather required subset
+  gather_subset: os_family  # selects package candidates for install; names may vary
   roles:
     - name: Configure 'sosreport' w/ extra files and checks
       role: sos
