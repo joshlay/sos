@@ -1,0 +1,17 @@
+---
+- name: "'sos' role"
+  hosts: all
+  roles:
+    - name: Configure 'sosreport' w/ extra files and checks
+      role: sos
+      sos_extras:  # dict keys create files in '/etc/sos/extras.d'; lists are lines/report items
+        amdgpu:
+          - 'rocm-smi -a'
+          - ':/sys/class/drm/card*/device/pp_features'
+          - ':/sys/class/drm/card*/device/numa_node'
+        systemd:
+          - 'systemctl status'
+          - 'systemd-analyze critical-chain'
+        cri:
+          - podman system info
+          - docker system info

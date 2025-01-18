@@ -1,0 +1,8 @@
+---
+# defaults file for sos
+
+sos_pkgs:  # mapped by 'ansible_os_family'; includes derivatives
+  Debian:
+    - sosreport
+  RedHat:
+    - sos
