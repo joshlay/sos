@@ -1,8 +1,9 @@
 sos
 =========
 
-This role installs [sosreport](https://github.com/sosreport/sos)
-and configures optional `extras.d` entries
+This role installs [sosreport](https://github.com/sosreport/sos),
+[xsos](https://github.com/ryran/xsos),
+and configures _(optional)_ `extras.d` entries
 
 Role Variables
 --------------
@@ -32,8 +33,8 @@ Example Playbook
               - 'systemctl status'
               - 'systemd-analyze critical-chain'
             cri:
-              - podman system info
-              - docker system info
+              - 'podman system info'
+              - 'docker system info'
 
 License
 -------
