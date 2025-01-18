@@ -15,5 +15,5 @@
           - 'systemctl status'
           - 'systemd-analyze critical-chain'
         cri:
-          - podman system info
-          - docker system info
+          - 'podman system info'
+          - 'docker system info'
