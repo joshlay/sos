@@ -4,7 +4,7 @@ This role installs [sosreport](https://github.com/sosreport/sos),
 [xsos](https://github.com/ryran/xsos),
 and configures _(optional)_ `extras.d` entries
 
-# Role Variables
+## Variables
 
 1. `sos_extras`: custom commands or files in `sos` reports.
 Default: see [Example Playbook](#example-playbook)
@@ -13,7 +13,7 @@ Default: `true`
 3. `sos_xsos_url`: `xsos` installation URL.
 [Default](https://github.com/ryran/xsos/raw/master/xsos)
 
-# Example Playbook
+## Example Playbook
 
 ```yaml
 ---
@@ -35,6 +35,6 @@ Default: `true`
           - 'docker system info'
 ```
 
-# License
+## License
 
 MIT
