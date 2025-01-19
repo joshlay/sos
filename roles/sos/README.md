@@ -20,8 +20,9 @@ Default: `true`
 - name: "'sos' role"
   hosts: all
   roles:
-    - name: Configure 'sosreport' w/ extra files and checks
+    - name: Configure 'sos', extras, and 'xsos'
       role: sos
+      sos_xsos_url: 'https://raw.githubusercontent.com/ryran/xsos/v0.7.33/xsos'
       sos_extras:
         amdgpu:
           - 'rocm-smi -a'
