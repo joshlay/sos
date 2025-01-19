@@ -2,9 +2,7 @@
 
 This role installs [sosreport](https://github.com/sosreport/sos),
 [xsos](https://github.com/ryran/xsos),
-and `extras.d` entries.
-
-_Report collection_ is left as an out-of-scope administrative activity.
+and `extras.d` entries. _Collection_ is left as an _(out-of-scope)_ admin activity.
 
 ## Variables
 
