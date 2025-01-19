@@ -2,7 +2,7 @@
 
 This role installs [sosreport](https://github.com/sosreport/sos),
 [xsos](https://github.com/ryran/xsos),
-and configures _(optional)_ `extras.d` entries
+and `extras.d` entries
 
 ## Variables
 
