@@ -8,6 +8,9 @@ sos_pkgs:
   RedHat:  # includes derivatives (eg: Fedora, Alma, etc)
     - sos
 
+# empty set of extras for '/etc/sos/extras.d', expected to be set by the user
+sos_extras: {}
+
 # sosreport examiner
 sos_xsos: true
 sos_xsos_url: 'https://github.com/ryran/xsos/raw/master/xsos'

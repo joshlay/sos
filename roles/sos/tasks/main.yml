@@ -20,7 +20,7 @@
 - name: Extras
   become: true
   tags: ['extras', 'extras.d']
-  loop: "{{ (sos_extras | dict2items) | default([]) }}"
+  loop: "{{ sos_extras | dict2items }}"
   loop_control: { loop_var: entry }
   ansible.builtin.copy:
     dest: "/etc/sos/extras.d/{{ entry.key }}"
