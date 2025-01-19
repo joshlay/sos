@@ -8,7 +8,7 @@ sos_pkgs:
   RedHat:  # includes derivatives (eg: Fedora, Alma, etc)
     - sos
 
-# empty set of extras for '/etc/sos/extras.d', expected to be set by the user
+# provides '/etc/sos/extras.d' entries. expected to be provided by the user, see README for current example
 sos_extras: {}
 
 # sosreport examiner
