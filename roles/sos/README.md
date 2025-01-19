@@ -28,10 +28,11 @@ Default: `true`
           - 'rocm-smi -a'
           - ':/sys/class/drm/card*/device/pp_features'
           - ':/sys/class/drm/card*/device/numa_node'
-        systemd:
-          - 'systemctl status'
-          - 'systemd-analyze critical-chain'
         cri:
           - 'podman system info'
           - 'docker system info'
+        net:
+          - 'lldpctl -f keyvalue'
+        systemd:
+          - 'systemd-analyze critical-chain'
 ```
