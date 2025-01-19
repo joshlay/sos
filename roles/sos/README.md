@@ -2,7 +2,7 @@
 
 This role installs [sosreport](https://github.com/sosreport/sos),
 [xsos](https://github.com/ryran/xsos),
-and `extras.d` entries. Report _generation_ or _collection_ is left as an admin activity.
+and `extras.d` entries. Report _generation/collection_ is left as an admin activity.
 
 ## Variables
 
