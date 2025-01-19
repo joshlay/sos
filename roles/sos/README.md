@@ -35,7 +35,3 @@ Default: `true`
           - 'podman system info'
           - 'docker system info'
 ```
-
-## License
-
-MIT
