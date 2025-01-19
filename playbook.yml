@@ -1,7 +1,7 @@
 ---
 - name: "'sos' role"
   hosts: all
-  gather_facts: true  # explicitly gather required subset
+  gather_facts: true  # explicitly gather, required. users may have opted out with 'ansible.cfg' or env vars
   gather_subset: os_family  # selects package candidates for install; names may vary
   roles:
     - name: Configure 'sosreport' w/ extra files and checks
