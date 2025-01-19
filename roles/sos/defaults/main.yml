@@ -1,10 +1,11 @@
 ---
 # defaults file for sos
-
-sos_pkgs:  # mapped by 'ansible_os_family'; includes derivatives
-  Debian:
+#
+# dictionary of sos/related packages to install, mapped by Ansible fact (ansible_os_family)
+sos_pkgs:
+  Debian:  # includes derivatives (eg: Ubuntu, Mint, etc)
     - sosreport
-  RedHat:
+  RedHat:  # includes derivatives (eg: Fedora, Alma, etc)
     - sos
 
 # sosreport examiner
