@@ -7,13 +7,13 @@ and `extras.d` entries. Report _generation/collection_ is left as an admin activ
 ## Variables
 
 1. `sos_extras`: custom commands or files in `sos` reports.
-Default: see [Example Playbook](#example-playbook)
+Default: see the [example playbook](#example)
 2. `sos_xsos`: controls [xsos](https://github.com/ryran/xsos) installation.
 Default: `true`
 3. `sos_xsos_url`: `xsos` installation URL.
 [Default](https://github.com/ryran/xsos/raw/master/xsos)
 
-## Example Playbook
+## Example
 
 ```yaml
 ---
